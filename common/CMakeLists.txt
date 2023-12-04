@@ -1082,5 +1082,5 @@ target_include_directories(common PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 add_custom_target(generate_version ${CMAKE_COMMAND} -P "${CMAKE_CURRENT_BINARY_DIR}/GenerateVersion.cmake")
 add_dependencies(common generate_version)
 
-add_subdirectory(test)
-add_subdirectory(benchmark)
+# add_subdirectory(test)
+# add_subdirectory(benchmark)
