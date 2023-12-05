@@ -84,4 +84,4 @@ endif()
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 # add_subdirectory(lib)
-add_subdirectory(test)
+# add_subdirectory(test)

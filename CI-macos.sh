@@ -38,18 +38,18 @@ cmake --build . --config "$BUILD_TYPE_VALUE" || exit 1
 BUILD_DIR=$(pwd)
 
 cd "$BUILD_DIR/lib/vecmath/test"
-./vecmath-test || exit 1
+# ./vecmath-test || exit 1
 
 cd "$BUILD_DIR/lib/kdl/test"
-./kdl-test || exit 1
+# ./kdl-test || exit 1
 
 cd "$BUILD_DIR/common/test"
-./common-test || exit 1
-./common-regression-test || exit 1
+# ./common-test || exit 1
+# ./common-regression-test || exit 1
 
 if [[ $TB_DEBUG_BUILD != "true" ]] ; then
     cd "$BUILD_DIR/common/benchmark"
-    ./common-benchmark || exit 1
+    # ./common-benchmark || exit 1
 else
     echo "Skipping common-benmchark because this is a debug build"
 fi

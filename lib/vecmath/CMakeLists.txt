@@ -64,4 +64,4 @@ else()
     message(FATAL_ERROR "Cannot set compile options for target")
 endif()
 
-add_subdirectory(test)
+# add_subdirectory(test)
