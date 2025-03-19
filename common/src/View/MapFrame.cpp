@@ -606,6 +606,7 @@ static QString describeSelection(const MapDocument* document)
       numberWithSuffix(selectedNodes.brushes().size(), "brush", "brushes");
     if (commonEntityNode)
     {
+      //selectedNodes.brushes()[0] //!!! here
       token += " (" + commonEntityNode->entity().classname() + ")";
     }
     else

@@ -41,6 +41,7 @@ int main(int argc, char* argv[])
   QSurfaceFormat format;
   format.setDepthBufferSize(24);
   format.setSamples(8);
+  format.setSwapBehavior(QSurfaceFormat::SwapBehavior::TripleBuffer);
   QSurfaceFormat::setDefaultFormat(format);
 
   // Makes all QOpenGLWidget in the application share a single context
